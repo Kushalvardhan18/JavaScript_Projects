@@ -1,9 +1,14 @@
+*{
+  background-color: #4c4c4a;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .container {
-    width: 575px;
-    height: 825px;
-  
-    background-color: #797978;
-    padding-left: 30px;
+    /* width: 575px;
+    height: 825px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-left: 30px; */
   }
   #height,
   #weight {
@@ -13,8 +18,7 @@
   }
   
   #weight-guide {
-    margin-left: 75px;
-    margin-top: 25px;
+    color: white;
   }
   
   #results {
@@ -25,23 +29,37 @@
   }
   
   button {
-    width: 150px;
-    height: 35px;
-    margin-left: 90px;
-    margin-top: 25px;
-    background-color: #fff;
-    padding: 1px 30px;
-    border-radius: 8px;
-    color: #212121;
-    text-decoration: none;
-    border: 2px solid #212121;
-  
-    font-size: 25px;
+    border: 1px solid #c778dd;
+    color:white;
+    padding: 10px 25px 10px 25px;
+    margin-block: 20px;
+    border-radius: 20px;
+    font-size: larger;
+  }
+  button:hover{
+    background-color:#c778dd ;
   }
   
   h1 {
     padding-left: 15px;
+    color: white;
     padding-top: 25px;
     
   }
-  
+  #height ,#weight{
+    background-color: white;
+    border:1px solid #c778dd;
+  }
+.container label{
+  color: white;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #c778dd;
+    padding: 40px;
+  }
+  form:hover{
+    box-shadow:10px 10px 100px #c778dd;
+  }
